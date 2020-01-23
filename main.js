@@ -10,7 +10,7 @@ function clownSwitch() {
   if (currentClown == 3) {
     currentClown = 0;
   }
-  document.getElementById("firstClown").src = clownList[currentClown];
+  document.getElementById("theJoes").src = clownList[currentClown];
 }
 
 function setupStart() {
