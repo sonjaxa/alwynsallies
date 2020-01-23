@@ -7,7 +7,7 @@ function youAlreadyKnowWhatsUp() {
 
 function clownSwitch() {
   currentClown = currentClown + 1;
-  if (currentClown == len.list(clownList)) {
+  if (currentClown == clownList.length) {
     currentClown = 0;
   }
   document.getElementById("theJoes").src = clownList[currentClown];
