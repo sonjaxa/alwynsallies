@@ -14,5 +14,5 @@ function clownSwitch() {
 }
 
 function setupStart() {
-  setInterval(clownSwitch, 3000);
+  setInterval(clownSwitch, 1000);
 }
