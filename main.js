@@ -2,7 +2,7 @@ var clownList = ["theBros/oneJoe.jpg", "theBros/twoJoe.jpg", "theBros/threeJoe.j
 var currentClown = 0;
 
 function youAlreadyKnowWhatsUp() {
-  document.getElementById("thingToWatch").innerHTML = "Paragraph changed";
+  document.getElementById("thingToWatch").innerHTML = "um he'll choose stuff to watch eventually i guess";
 }
 
 function clownSwitch() {
