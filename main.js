@@ -1,5 +1,6 @@
 var clownList = ["theBros/oneJoe.jpg", "theBros/twoJoe.jpg", "theBros/threeJoe.jpg", "theBros/fourJoe.jpg", "theBros/fiveJoe.jpg", "theBros/sixJoe.jpg"];
 var currentClown = 0;
+var beenClicked = false;
 
 // LIST OPTIONS:
 var badTvList =
@@ -12,7 +13,11 @@ var badTvList =
 "twin peaks",
 "ansel deep divery",
 "the double",
-"whms"]
+"whms",
+"dolls?",
+"MAZE RUNNER",
+"divergent",
+"thg"]
 
 function youAlreadyKnowWhatsUp() {
   document.getElementById("thingToWatch").innerHTML = "um he'll choose stuff to watch eventually i guess";
@@ -20,8 +25,10 @@ function youAlreadyKnowWhatsUp() {
 
 // MEDIA SELECTOR
 function theJellicleChoice() {
-  var garbageVar = Math.floor((Math.random()));
+  var garbageVar = Math.floor(Math.random() * badTvList.length);
   document.getElementById("enterMovieHere").innerHTML = badTvList[garbageVar];
+  beenClicked = false;
+  console.log(garbageVar);
 }
 
 // THIS DOES THE JOE CYCLE
@@ -33,6 +40,19 @@ function clownSwitch() {
   document.getElementById("theJoes").src = clownList[currentClown];
 }
 
+function buttonClicked() {
+  beenClicked = true;
+  console.log("did it even get checked bro");
+}
+
+function checkyCheck() {
+  if (beenClicked == true) {
+    theJellicleChoice();
+    console.log("been checky chkeced");
+  }
+}
+
 function setupStart() {
   setInterval(clownSwitch, 1000);
+  setInterval(checkyCheck, 10);
 }
