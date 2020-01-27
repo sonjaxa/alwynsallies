@@ -1,6 +1,5 @@
 var clownList = ["theBros/oneJoe.jpg", "theBros/twoJoe.jpg", "theBros/threeJoe.jpg", "theBros/fourJoe.jpg", "theBros/fiveJoe.jpg", "theBros/sixJoe.jpg"];
 var currentClown = 0;
-clickyClick = false;
 
 // LIST OPTIONS:
 var badTvList =
@@ -34,20 +33,6 @@ function clownSwitch() {
   document.getElementById("theJoes").src = clownList[currentClown];
 }
 
-yesClicked() {
-  clickyClick = true;
-}
-
-checkyCheck() {
-  if (clickyClick == true) {
-    theJellicleChoice();
-    clickyClick = false;
-  }
-}
-
 function setupStart() {
   setInterval(clownSwitch, 1000);
-  while (true) {
-    checkyCheck();
-  }
 }
