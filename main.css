@@ -1,17 +1,68 @@
 body {
-  background-color: cyan;
+  background-color: grey;
+  font-family: 'Bangers', cursive;
+}
+
+#mrPresident {
+  font-family: 'Bangers', cursive;
+  font-size: 150%;
 }
 
 #enterMovieHere {
-  font-size: 2000%;
+  font-size: 300%;
   color: red;
-  position: relative;
-  animation: mymove 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  padding: none;
+  text-align: center;
 }
 
-@keyframes mymove {
+#importantButton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 38px;
+  font-family: 'Bangers', cursive;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: pink;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#importantButton:hover {background-color: magenta}
+
+#importantButton:active {
+  background-color: magenta;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#theJoes {
+  padding-top: 30px;
+  margin-left: 10px;
+}
+
+#bible2 {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* Create two equal columns that float next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*@keyframes mymove {
   from {top: 0px;}
   to {top: 1500px; color: blue;}
 }
@@ -42,4 +93,4 @@ body {
     -webkit-animation: bgcolor 2s infinite;
     animation: bgcolor 1s infinite;
     -webkit-animation-direction: alternate;
-}
+} */

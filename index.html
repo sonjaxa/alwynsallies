@@ -4,17 +4,26 @@
   <head>
     <meta charset="utf-8">
     <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>ALLIES OF ALWYN</title>
   </head>
 
   <body onload = "setupStart()">
 
-    <p id="enterMovieHere">owo</p>
-    <button onclick = "youAlreadyKnowWhatsUp()">CLICK IT BARACK</button>
-    <p id="thingToWatch">WATCH THISTHINGG</p>
-    <img src="theBros/oneJoe.jpg" height="600" width="600" id="theJoes">
-    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/rK6jHtsfo5E?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-    <button onclick="buttonClicked()">OKAY so click this</button>
+    <div class="row">
+
+      <div class="column">
+        <button onclick="buttonClicked()" id = "importantButton">OKAY so click this</button><br><br>
+        <p id="enterMovieHere">owo</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rK6jHtsfo5E?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="column">
+      <img src="theBros/oneJoe.jpg" height="600" width="600" id="theJoes">
+      <iframe height="600" width="600" id="bible2" src="https://docs.google.com/document/d/1kQ-soZ87yGSGNAvyeA_B_Qi5g6Vu2Fx2Zh6iI1t9KTw/edit?rm=minimal#gid=0"></iframe>
+      </div>
+
+    </div>
   </body>
 </html>
