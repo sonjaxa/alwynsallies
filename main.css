@@ -31,6 +31,10 @@ body {
   box-shadow: 0 9px #999;
 }
 
+#maggieMessage {
+  font-size: 150%;
+}
+
 #importantButton:hover {background-color: magenta}
 
 #importantButton:active {
@@ -41,11 +45,9 @@ body {
 
 #theJoes {
   padding-top: 30px;
-  margin-left: 10px;
 }
 
 #bible2 {
-  margin-left: 10px;
   margin-top: 5px;
 }
 
