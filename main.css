@@ -8,14 +8,14 @@ body {
   font-size: 150%;
 }
 
-#enterMovieHere {
+.heyHoWatchThis {
   font-size: 300%;
   color: red;
   padding: none;
   text-align: center;
 }
 
-#importantButton {
+.choosingButton {
   display: inline-block;
   padding: 15px 25px;
   font-size: 38px;
@@ -62,6 +62,18 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-left: 10px;
+  width: 100%;
+  background-color: salmon;
+  color: white;
+  text-align: left;
+  /*letter-spacing: 1px;*/
 }
 
 /*@keyframes mymove {
