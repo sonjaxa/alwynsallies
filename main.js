@@ -10,7 +10,8 @@ var badTvList =
   "CURSED ANSWER: MEATFRUIT",
   "safiya videos? (i might be able to make something that randomly selects a video out of her uploads. updates to come in later patch updates)",
   "twin peaks",
-  "dolls?"
+  "dolls?",
+  "tma"
 ]
 
 var badMoveyList =
